@@ -1,29 +1,55 @@
 <html>
-    <head>
-        <style>
-            form{
-                height:auto;
-                width: auto;
-                text-align: center;
-            }
-        </style>
-        <link rel="stylesheet" href="../css/styles.css">
-    </head>
-    <body>
+
+<head>
+    <style>
+        form {
+            height: auto;
+            width: auto;
+            text-align: left;
+            /* width:50% */
+            padding: 33px;
+
+        }
+
+        .box {
+            border: 3px solid #000000;
+            margin-top: 170px;
+            text-align: center;
+            display: flex;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="navbar sticky">
+        Prashn
+        <ul>
+            <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="./feed.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></li>
+            <li><a href="./write.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
+            <li><a href="./notification.html"><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="box center">
         <form>
             <h1>What Topic does the question belongs to:</h1>
             <br>
             <input type="radio" id="Sports" name="Topic" value="Sports">
-              <label for="sports">Sports</label><br>
-              <input type="radio" id="Entertainment" name="Topic" value="Entertainment">
-              <label for="Entertainment">Entertainment</label><br>
-              <input type="radio" id="Career" name="Topic" value="Career">
-              <label for="Career">Career</label><br>
-              <textarea rows="4" cols="50" name="comment" form="userform">
-                Enter question here...</textarea><br>
-              <button>
-                  submit
-              </button>
+          <label for="sports">Sports</label><br><br>
+          <input type="radio" id="Entertainment" name="Topic" value="Entertainment">
+          <label for="Entertainment">Entertainment</label><br><br>
+          <input type="radio" id="Career" name="Topic" value="Career">
+            <label for="Career">Career</label><br><br>
+            <textarea rows="4" cols="50" name="comment" form="userform">
+                Enter question here...</textarea><br><br>
+            <button class="center">
+                submit
+            </button>
         </form>
-    </body>
+    </div>
+</body>
+
 </html>
